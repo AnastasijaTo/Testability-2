@@ -1,11 +1,11 @@
 import java.text.DecimalFormat;
 
 public class Main {
-    public static void main(String[] args) {
+    public static <index> void main(String[] args) {
         BmiService service = new BmiService();
         int weight = 67;
         double height = 1.65;
-        double mass = service.calculate(weight, height);
+        int mass = service.calculate(weight, height);
         String recommended;
 
         if (mass >= 0 && mass <= 15.99) {
